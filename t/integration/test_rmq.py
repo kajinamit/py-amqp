@@ -82,7 +82,7 @@ def test_tls_default_certs():
         host="tls-v1-2.badssl.com:1012",
         ssl=True,
     )
-    assert type(connection) == transport.SSLTransport
+    assert type(connection) is transport.SSLTransport
     connection.connect()
 
 

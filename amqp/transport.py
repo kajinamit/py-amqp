@@ -111,7 +111,7 @@ class _AbstractTransport:
         # adding '__dict__' to get dynamic assignment
         "__dict__",
         "__weakref__",
-        )
+    )
 
     def __repr__(self):
         if self.sock:
@@ -399,7 +399,7 @@ class SSLTransport(_AbstractTransport):
 
     __slots__ = (
         "sslopts",
-        )
+    )
 
     def _setup_transport(self):
         """Wrap the socket in an SSL object."""

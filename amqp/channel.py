@@ -122,7 +122,7 @@ class Channel(AbstractChannel):
         if self.connection.confirm_publish:
             self.basic_publish = self.basic_publish_confirm
 
-        __slots__ = (
+    __slots__ = (
         "is_open",
         "active",
         "returned_messages",
@@ -132,7 +132,7 @@ class Channel(AbstractChannel):
         "no_ack_consumers",
         "on_open",
         "_confirm_selected",
-        )
+    )
 
     def then(self, on_success, on_error=None):
         return self.on_open.then(on_success, on_error)

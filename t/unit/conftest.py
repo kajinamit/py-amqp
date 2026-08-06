@@ -3,6 +3,7 @@ import pytest
 
 sentinel = object()
 
+
 class _patching:
 
     def __init__(self, monkeypatch, request):

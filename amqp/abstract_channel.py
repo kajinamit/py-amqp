@@ -50,7 +50,7 @@ class AbstractChannel:
         # adding '__dict__' to get dynamic assignment
         "__dict__",
         "__weakref__",
-        )
+    )
 
     def __enter__(self):
         return self

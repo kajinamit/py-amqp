@@ -111,7 +111,7 @@ class Message(GenericContent):
         "delivery_info",
         "body",
         "channel",
-        )
+    )
 
     @property
     def headers(self):

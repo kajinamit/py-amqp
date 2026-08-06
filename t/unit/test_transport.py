@@ -536,7 +536,7 @@ class test_AbstractTransport_connect:
 
     def test_connect_calls_getaddrinfo_with_af_unspec(self):
         with patch('socket.socket', return_value=MockSocket()), \
-            patch('socket.getaddrinfo') as getaddrinfo:
+                patch('socket.getaddrinfo') as getaddrinfo:
             self.t.sock = Mock()
             self.t.close()
             self.t.connect()

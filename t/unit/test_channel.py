@@ -14,6 +14,7 @@ from amqp.serialization import dumps
 
 from t.mocks import ContextMock
 
+
 class test_Channel:
 
     @pytest.fixture(autouse=True)

@@ -74,7 +74,7 @@ class test_serialization:
 
     def test_float(self):
         data = int(loads(b'fb', dumps(b'fb', [32.31, False]), 0)[0][0] * 100)
-        assert(data == 3231)
+        assert data == 3231
 
     def test_table(self):
         table = {

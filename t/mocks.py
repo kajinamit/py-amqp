@@ -1,5 +1,6 @@
 from unittest.mock import Mock
 
+
 class _ContextMock(Mock):
     """Dummy class implementing __enter__ and __exit__
     as the :keyword:`with` statement requires these to be implemented
